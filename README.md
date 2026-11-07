@@ -1,3 +1,5 @@
+![Spark Pair Kit — Two Sparks. One Cluster. Retro science-fiction artwork of two linked compute towers beneath a chrome title.](docs/assets/spark-pair-kit-banner.png)
+
 # Spark Pair Kit
 
 **Two 128GB DGX Sparks. One guided GLM 5.3 Flash setup.**
