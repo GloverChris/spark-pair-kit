@@ -1,0 +1,16 @@
+settings.local.json
+*.local.json
+.env
+.env.*
+cluster.env
+*cluster-setup*.json
+image-lock.json
+prepared.json
+hf-cache/
+launcher/
+__pycache__/
+*.py[cod]
+*.log
+*.key
+*.pem
+.DS_Store

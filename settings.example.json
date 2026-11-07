@@ -1,0 +1,13 @@
+{
+  "head_management_ip": null,
+  "worker_management_ip": null,
+  "head_cluster_ip": null,
+  "worker_cluster_ip": null,
+  "subnet_pool": null,
+  "ports": null,
+  "api_port": 8001,
+  "master_port": 29501,
+  "container_name": "spark_pair_glm53",
+  "max_model_len": 32768,
+  "minimum_free_gib": 300
+}

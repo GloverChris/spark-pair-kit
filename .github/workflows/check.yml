@@ -1,0 +1,18 @@
+name: Offline checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Test without devices or credentials
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 -m py_compile spark_pair.py welcome.py
+          for script in setup.sh spark-pair.sh cluster-pair.sh serve-glm.sh; do bash -n "$script"; done
+          bash setup.sh --banner-only
